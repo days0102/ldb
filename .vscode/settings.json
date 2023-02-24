@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "*.pdf": "tex",
+        "*.flex": "lex",
+        "ostream": "cpp"
+    }
+}
