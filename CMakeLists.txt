@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15) # cmake最低版本
 set(CXX_STANDARD 17)    # 使用c++17
-set(CMAKE_CXX_FLAGS -Wall)
+set(CMAKE_CXX_FLAGS "-g -Wall")# debug
 project(ldb)    # 项目名称
 
 message(STATUS "Start Build ...")
@@ -11,4 +11,5 @@ set(LIBRARY_OUTPUT_DIR ${PROJECT_BINARY_DIR}/lib)
 message(STATUS "Output Dir: " ${EXECUTABLE_OUTPUT_DIR})
 message(STATUS "Lib Dir: " ${LIBRARY_OUTPUT_DIR})
 
+# 添加子目录下的 CMakeLists
 add_subdirectory(src)
