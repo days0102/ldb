@@ -11,5 +11,10 @@ set(LIBRARY_OUTPUT_DIR ${PROJECT_BINARY_DIR}/lib)
 message(STATUS "Output Dir: " ${EXECUTABLE_OUTPUT_DIR})
 message(STATUS "Lib Dir: " ${LIBRARY_OUTPUT_DIR})
 
+
+include_directories(${PROJECT_SOURCE_DIR})
+# get_property(dirs DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY INCLUDE_DIRECTORIES)
+# message(">>> include_dirs=${dirs}") #打印一下目录情况
+
 # 添加子目录下的 CMakeLists
 add_subdirectory(src)

@@ -15,3 +15,13 @@ FOREACH(FF ${SERVER_SRC})
     MESSAGE(${FF})
 ENDFOREACH(FF)
 ADD_EXECUTABLE(${PROJECT_NAME} ${SERVER_SRC}) # 生成目标
+
+#
+# clang-tidy
+#
+# 搜索 clang-tidy
+find_program(CLANG_TIDY_EXE NAMES "clang-tidy-12" REQUIRED)
+# 禁用了所有默认检查 (-*)，并且只启用了提倡使用现代 C++ 语言结构的检查 ( modernize-*)。
+set(CLANG_TIDY_COMMAND "${CLANG_TIDY_EXE}" "-checks=-*,modernize-*")
+# 为构建目标clang-tidy设置属性
+set_target_properties(${PROJECT_NAME} PROPERTIES CXX_CLANG_TIDY "${CLANG_TIDY_COMMAND}")
