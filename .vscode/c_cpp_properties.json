@@ -7,7 +7,7 @@
                 "${vcpkgRoot}/x64-linux/include"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/clang",
+            "compilerPath": "/usr/bin/clang-12",
             "intelliSenseMode": "linux-clang-x64",
             "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "configurationProvider": "ms-vscode.makefile-tools"

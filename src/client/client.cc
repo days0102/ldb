@@ -2,7 +2,7 @@
  * @Author       : Outsider
  * @Date         : 2023-02-24 11:06:31
  * @LastEditors  : Outsider
- * @LastEditTime : 2023-02-26 20:21:03
+ * @LastEditTime : 2023-05-28 12:23:32
  * @Description  : In User Settings Edit
  * @FilePath     : /ldb/src/client/client.cc
  */
@@ -14,6 +14,7 @@
 #include "arpa/inet.h"
 #include "getopt.h"
 #include "inc/defs.hh"
+#include "inc/net/socket.hh"
 #include "strings.h"
 #include "sys/socket.h"
 #include "unistd.h"

@@ -18,3 +18,4 @@ include_directories(${PROJECT_SOURCE_DIR})
 
 # 添加子目录下的 CMakeLists
 add_subdirectory(src)
+add_subdirectory(lib)

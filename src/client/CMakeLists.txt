@@ -21,7 +21,10 @@ ENDFOREACH(FF)
 # get_property(dirs DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY INCLUDE_DIRECTORIES)
 # message(">>> include_dirs=${dirs}") #打印一下目录情况
 
+set(LIBS net) # 添加库
+
 ADD_EXECUTABLE(${PROJECT_NAME} ${CLIENT_SRC}) # 生成目标
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${LIBS}) # 链接库
 #
 # clang-tidy
 #
